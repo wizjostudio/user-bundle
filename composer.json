@@ -1,0 +1,35 @@
+{
+    "name": "wizjo/user-bundle",
+    "description": "User bundle for Symfony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Rzeczkowski",
+            "email": "piotr@wizjostudio.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wizjo\\Bundle\\UserBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wizjo\\Bundle\\UserBundle\\Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "symfony/http-kernel": "^4.0",
+        "symfony/validator": "^4.0",
+        "symfony/security-bundle": "^4.0",
+        "rzeka/data-handler-bundle": "^1.1",
+        "happyr/doctrine-specification": "^0.7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4",
+        "doctrine/orm": "^2.5",
+        "doctrine/doctrine-bundle": "^1.8"
+    }
+}
